@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"     
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:id="@+id/categoriaView">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="45dp"
+	    android:background="@color/blue_500"
+	    android:orientation="horizontal">
+	        
+		<ImageView 
+		    android:layout_width="40dp" 
+		    android:layout_height="40dp" 
+		    android:layout_marginLeft="10dp" 
+		    android:src="@drawable/logoretocado" />
+	
+	    <TextView 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="40dp" 
+	        android:gravity="center_vertical" 
+	        android:layout_marginLeft="20dp" 
+	        android:text="@string/tvTituloCategorias" 
+	        android:textColor="@color/white" 
+	        android:textSize="@dimen/font_size_16" />
+	        
+	</LinearLayout>
+	    
+	<LinearLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="0dp" 
+	    android:layout_weight="2" 
+	    android:baselineAligned="false"
+	    android:orientation="horizontal">
+	        
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent" 
+		    android:layout_weight="2" 
+		    android:gravity="fill_vertical" 
+		    android:orientation="vertical" 
+		    android:descendantFocusability="beforeDescendants" 
+		    android:focusableInTouchMode="true">
+	            
+			<EditText
+			    android:id="@+id/etBuscar"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:ellipsize="end"
+			    android:hint="@string/etFiend"
+			    android:imeOptions="actionSearch"
+			    android:inputType="text"
+			    android:longClickable="true"
+			    android:drawableRight="@drawable/ic_action_search"
+			    android:background="@color/blue_100"
+			    android:padding="5dp"
+			    android:maxLines="1" />
+			
+		    <ListView 
+		        android:id="@+id/lstCategorias" 
+		        android:layout_width="match_parent" 
+		        android:layout_height="match_parent">
+		    </ListView>
+		    
+		</LinearLayout>
+			
+	    <LinearLayout 
+	        android:layout_width="0dp" 
+	        android:layout_height="match_parent" 
+	        android:layout_weight="1" 
+	        android:gravity="right">
+
+		     <ImageView 
+		         android:id="@+id/imgPublicidad" 
+		         android:layout_width="match_parent" 
+		         android:layout_height="match_parent"
+		         android:scaleType="fitXY" 
+		         android:src="@drawable/publicidad_vertical_1" />
+ 		</LinearLayout>	    
+	    
+    </LinearLayout>
+ 	
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="45dp"
+        android:background="@color/blue_500" >
+    </LinearLayout>  
+    
+</LinearLayout>

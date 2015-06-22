@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+		android:background="@color/blue_500"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgLogo" 
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logoretocado" />
+
+        <TextView
+            android:id="@+id/tvTituloSistema"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"            
+            android:gravity="center_vertical"
+            android:text="@string/tvTituloCategorias" 
+	        android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"            
+            android:gravity="fill_vertical"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.2"
+                android:gravity="fill_vertical"
+                android:orientation="horizontal" >
+	
+	            <ImageView
+	                android:id="@+id/imageView2"
+	                android:layout_width="70dp"
+	                android:layout_height="70dp"
+	                android:layout_margin="5dp"
+	                android:src="@drawable/iconoeventosyfiestas" />
+	
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="70dp"
+	                android:layout_margin="5dp"
+	                android:gravity="center"
+	                android:text="EVENTOS"
+	                android:textSize="@dimen/font_size_18"
+	                android:textStyle="bold"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="@color/white" />
+            
+	    	</LinearLayout>
+	            
+            <LinearLayout            
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="15dp"
+            	android:layout_marginRight="15dp"	            
+	            android:gravity="fill_vertical"
+	            android:orientation="vertical" >
+	            
+	            <ListView
+	                android:id="@+id/lstSubCategorias"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" >
+	            </ListView>
+	            
+	        </LinearLayout>
+        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            
+            <ImageView
+                android:id="@+id/imgPublicidad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"                
+                android:scaleType="fitXY"
+                android:src="@drawable/publicidad_vertical_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue_500" >
+    </LinearLayout>
+
+</LinearLayout>
